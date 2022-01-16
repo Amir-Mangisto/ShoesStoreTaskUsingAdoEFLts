@@ -1,0 +1,16 @@
+﻿@using ShoesStoreTaskUsingAdoEFLts.Models;
+
+<h2>ShowAllShoes</h2>
+
+<div>
+    @foreach (SportShoe shoeItem in Model)
+    {
+        <h1>@shoeItem.Id</h1>
+        <h1>@shoeItem.Company</h1>
+        <h1>@shoeItem.Brand</h1>
+        <h1>@shoeItem.Size</h1>
+        <h1>@shoeItem.Price</h1>
+
+    }
+</div>
+

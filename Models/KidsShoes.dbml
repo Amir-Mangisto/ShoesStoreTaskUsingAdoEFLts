@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ShoeStoreDB" Class="KidsShoesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-IGIOI52;Initial Catalog=ShoeStoreDB;Integrated Security=True;Pooling=False;MultipleActiveResultSets=True;Application Name=EntityFramework" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ShoeStoreDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.KidsShoes" Member="KidsShoes">
+    <Type Name="KidsShoe">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Company" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Matirial" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="InStore" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Size" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Price" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
